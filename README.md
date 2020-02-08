@@ -1,18 +1,18 @@
 FIRST TIME
 ================================================================
-git config user.name [username]
-git config user.email [email]
-git clone [url]
+git config user.name [username]<br/>
+git config user.email [email]<br/>
+git clone [url]<br/>
 
 Most used
 ================================================================
-git add .
-git commit -m [ack]
-git push -u origin master
+git add .<br/>
+git commit -m [ack]<br/>
+git push -u origin master<br/>
 
 
 Setting remote Repository
 ================================================================
-git remote -v
-git remote add origin https://github.com/Abuubkar/python.git
-git remote set-url origin https://github.com/Abuubkar/python.git
+git remote -v<br/>
+git remote add origin https://github.com/Abuubkar/python.git<br/>
+git remote set-url origin https://github.com/Abuubkar/python.git<br/>
