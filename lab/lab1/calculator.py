@@ -25,16 +25,7 @@ try:
             print("Value1 = " + str(self.__value1) +
                   "\nValue2 = " + str(self.__value2))
 
-    cal = calculator(input("Enter numbers: \n"),
-                     input("Enter numbers: \n"))
-    cal.add()
-
 except ValueError as ve:
     print(ve.__class__.__name__ + " : Value not Numeric")
 except ZeroDivisionError as zde:
     print(zde.__class__.__name__ + " : " + "Denominator is Zero ")
-
-
-else:
-    cal.print()
-    cal.print_value()
