@@ -19,6 +19,9 @@ cal = calculator(input("Enter 1st Value: "),
 
 # Processing
 while(True):
+    os.system("pause")
+    os.system("cls")
+
     print("\n1.Addition\t2.Subtraction\n3.Multiplication\t")
     print("4.Division\n5.Print Last Result\t6.Change Values")
     print("7.Print Values\t8.Exit")
@@ -42,6 +45,3 @@ while(True):
         cal.print_value()
     if(menu == "8"):
         break
-
-    os.system("pause")
-    os.system("cls")
