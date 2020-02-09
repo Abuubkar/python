@@ -21,6 +21,10 @@ try:
         def print(self):
             print("Your answer is "+self.__result.__str__())
 
+        def print_value(self):
+            print("Value1 = " + str(self.__value1) +
+                  "\nValue2 = " + str(self.__value2))
+
     cal = calculator(input("Enter numbers: \n"),
                      input("Enter numbers: \n"))
     cal.add()
@@ -33,3 +37,4 @@ except ZeroDivisionError as zde:
 
 else:
     cal.print()
+    cal.print_value()
