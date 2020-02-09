@@ -8,15 +8,19 @@ try:
 
         def add(self):
             self.__result = self.__value1 + self.__value2
+            self.print()
 
         def sub(self):
             self.__result = self.__value1 - self.__value2
+            self.print()
 
         def mul(self):
             self.__result = self.__value1 * self.__value2
+            self.print()
 
         def div(self):
             self.__result = self.__value1 / self.__value2
+            self.print()
 
         def print(self):
             print("Your answer is "+self.__result.__str__())
