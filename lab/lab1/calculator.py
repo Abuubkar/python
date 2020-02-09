@@ -21,15 +21,7 @@ try:
         def print(self):
             print("Your answer is "+self.__result.__str__())
 
-    cal = calculator(input("Enter numbers: \n"),
-                     input("Enter numbers: \n"))
-    cal.add()
-
 except ValueError as ve:
     print(ve.__class__.__name__ + " : Value not Numeric")
 except ZeroDivisionError as zde:
     print(zde.__class__.__name__ + " : " + "Denominator is Zero ")
-
-
-else:
-    cal.print()
