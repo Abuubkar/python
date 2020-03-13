@@ -47,4 +47,24 @@ def sample_long_running_recognize(storage_uri):
             u"End time: {} seconds {} nanos".format(
                 word.end_time.seconds, word.end_time.nanos
             )
-        ) 
+        )
+
+# [END speech_transcribe_async_word_time_offsets_gcs]
+
+
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--storage_uri",
+        type=str,
+        default="https://drive.google.com/file/d/18wfvQkXmb52Xe8gdGFhjiayBdtXLFXBi/view?usp=sharing",
+    )
+    args = parser.parse_args()
+
+    sample_long_running_recognize(args.storage_uri)
+
+
+if __name__ == "__main__":
+    main()
