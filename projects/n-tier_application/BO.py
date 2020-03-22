@@ -45,10 +45,11 @@ class Bo:
 
     @property
     def bill(self):
-        #print("bill getter called")
+        print("bill getter called")
         return self._bill
 
     @property
     def id(self):
         #print("id getter called")
         return self._id
+
